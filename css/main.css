@@ -291,6 +291,9 @@ body.reveal .hamburger {
 	text-align: center;
 	flex: 1;
 }
+.icon img {
+	height: 50px;
+}
 
 body .icon h3 {
 	padding: 0 30px;
