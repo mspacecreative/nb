@@ -326,21 +326,23 @@ section#products, section#partnerships {
 }
 .product-container.first {
 	background-image: url(../img/mobile-ticketing-bg.jpg);
-	background-size: 70%;
-	background-position: right center;
+	background-size: cover;
+	background-position: center;
 	background-repeat: no-repeat;
 	max-width: none;
-	width: 100%;
+	width: 70%;
 	height: 130%;
+	right: 0;
 }
 .product-container.second {
 	background-image: url(../img/id-verification-bg.jpg);
-	background-size: 70%;
-	background-position: left center;
+	background-size: cover;
+	background-position: center;
 	background-repeat: no-repeat;
 	max-width: none;
-	width: 100%;
+	width: 70%;
 	height: 130%;
+	left: 0;
 }
 body .dzsparallaxer:not(.mode-oneelement) {
 	background: none;
@@ -664,8 +666,11 @@ body ul.social-media {
 		padding: 30px;
 	}
 	#products .product-container {
+		width: 100%;
 		background-size: 100%;
-		background-position: top center;
+		background-position: top;
+		height: 110%;
+		
 	}
 	.product-container ~ .inner {
 	    padding: 100px 0 50px;
