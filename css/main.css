@@ -542,6 +542,18 @@ body ul.social-media {
 .footer-bottom .half-col:last-child {
 	float: right;
 }
+.mobile-navigation ul {
+	padding: 20px;
+}
+.mobile-navigation li {
+	list-style: none;
+}
+.mobile-navigation a {
+	padding: 10px 0;
+	display: block;
+	text-decoration: none;
+	color: #333;
+}
 @media (max-width: 980px) {
 	.navigation {
 		display: none;
@@ -626,11 +638,11 @@ body ul.social-media {
 		background-size: 100%;
 		background-position: top center;
 	}
-	.product-container {
-		padding: 100px 0 25px;
+	.product-container ~ .inner {
+	    padding: 100px 0 50px;
 	}
 	#products .inner {
-		padding-bottom: 25px;
+		padding-bottom: 50px;
 	}
 	.more-products h2 {
 		top: 30px;
@@ -648,7 +660,7 @@ body ul.social-media {
 	.offering {
 		padding-top: 25px;
 		padding-bottom: 25px;
-		flex-basis: 100%;
+		flex-basis: 80%;
 	}
 }
 

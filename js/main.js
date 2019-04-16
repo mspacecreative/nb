@@ -21,6 +21,11 @@ function headerAdjust() {
 	}
 }
 
+$('.mobile-navigation a[href*="#"]').click(function() {
+	$(this).parent().parent().parent().prev().toggleClass('is-active');
+	$('body').toggleClass('reveal');
+});
+
 $(document).ready(function() {
 	//navHeight();
 	hamburgerMenu();
