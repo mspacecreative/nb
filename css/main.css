@@ -382,9 +382,6 @@ body .dzsparallaxer:not(.mode-oneelement) {
 	left: 50%;
 	transform: translateX(-50%);
 }
-.offerings-container {
-	flex-wrap: wrap;
-}
 .offering {
 	display: flex;
 	flex-basis: 50%;
@@ -646,9 +643,13 @@ body ul.social-media {
 	    border-right: none;
 		border-bottom: 2px solid #c1a525;
 	}
+	.offerings-container {
+		flex-wrap: wrap;
+	}
 	.offering {
 		padding-top: 25px;
 		padding-bottom: 25px;
+		flex-basis: 100%;
 	}
 }
 
