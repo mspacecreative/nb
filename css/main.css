@@ -316,10 +316,8 @@ body .icon h3 {
 	z-index: 10;
 	margin: auto;
 	width: 100%;
-	position: absolute;
-	top: -50px;
-	left: 50%;
-	transform: translateX(-50%);
+	position: relative;
+	top: 0;
 }
 .digi-verification.inner h2 {
 	top: 20px;
