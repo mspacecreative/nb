@@ -157,6 +157,7 @@ img {
 	position: absolute;
 	top: 0;
 	left: 0;
+	display: block;
 }
 .tagline {
 	max-width: 500px;
@@ -267,9 +268,18 @@ body.reveal .hamburger {
 	padding-top: 50px;
 }
 .icons-container .inner {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
 	flex-direction: row;
+	-webkit-box-align: baseline;
+	-ms-flex-align: baseline;
 	align-items: baseline;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
 }
 .icon {
@@ -278,6 +288,7 @@ body.reveal .hamburger {
 	flex-direction: column;
 	padding: 20px;
 	text-align: center;
+	flex: 1;
 }
 
 body .icon h3 {
