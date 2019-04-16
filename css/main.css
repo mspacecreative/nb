@@ -1,0 +1,837 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+*:focus {
+	outline: none;
+}
+
+body p:last-of-type {
+	margin-bottom: 0;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+body {
+	font-family: Proxima Nova;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+header {
+	background-color: rgba(192, 164, 38, .50);
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 999;
+}
+img {
+	max-width: 100%;
+}
+.logo {
+	float: left;
+}
+.logo {
+	display: block;
+	transition: all 0.5s ease-in-out;
+	padding: 12px 0;
+	width: 300px;
+}
+.shrink .logo {
+	width: 175px;
+	transition: all 0.5s ease-in-out;
+}
+.logo img {
+	width: 100%;
+	height: auto;
+}
+.inner {
+	width: 80%;
+	max-width: 1080px;
+	margin: auto;
+}
+.hero {
+	background-image: url(../img/hero-bg-img.jpg);
+	background-size: cover;
+	position: relative;
+}
+.tagline {
+	max-width: 500px;
+	float: right;
+	padding: 25% 0;
+	position: relative;
+	z-index: 10;
+}
+.tagline h1 {
+	text-transform: uppercase;
+	color: #fff;
+	text-align: right;
+	font-size: 65px;
+	line-height: 1em;
+}
+.hero:after {
+	position: absolute;
+	content: '';
+	background-color: rgba(91, 140, 162, .30);
+	top: 0;
+	left: 0;
+	z-index: 1;
+	height: 100%;
+	width: 100%;
+}
+.navigation {
+	float: right;
+	display: table;
+	padding: 20px 0;
+	transition: all 0.5s ease-in-out;
+}
+.shrink .navigation {
+	padding: 8px 0;
+	transition: all 0.5s ease-in-out;
+}
+.navigation ul {
+	font-size: 0;
+	display: table-cell;
+	vertical-align: middle;
+	padding: 0;
+}
+.navigation li {
+	display: inline-block;
+	font-size: 17px;
+	vertical-align: middle;;
+}
+.navigation a {
+	padding: 10px 15px;
+	display: block;
+	color: #fff;
+	text-decoration: none
+}
+.navigation li:last-child a {
+	padding-right: 0;
+}
+
+.mobile-navigation {
+	display: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+	transform: translateX(250px);
+	width: 250px;
+	background-color: #f5f5f5;
+	transition: all 0.25s ease-in-out;
+	height: 100%;
+}
+body .hamburger {
+	right: 5%;
+	position: absolute;
+	display: none;
+	transition: all 0.25s ease-in-out;
+	outline: none;
+}
+body.reveal .hamburger {
+	transform: translateX(-250px);
+	transition: all 0.25s ease-in-out;
+}
+.hamburger .hamburger-inner, .hamburger .hamburger-inner:after, .hamburger .hamburger-inner:before, body .hamburger.is-active .hamburger-inner, body .hamburger.is-active .hamburger-inner:after, body .hamburger.is-active .hamburger-inner:before {
+	background-color: #fff;
+}
+.reveal .mobile-navigation {
+	transform: translateX(0);
+	transition: all 0.25s ease-in-out;
+}
+.icons-container {
+	background-image: url(../img/squares-texture.jpg);
+	position: relative;
+	padding-top: 50px;
+}
+.icons-container .inner {
+	display: flex;
+	flex-direction: row;
+	align-items: baseline;
+	justify-content: center;
+}
+.icon {
+	flex-basis: 20%;
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+	text-align: center;
+}
+
+body .icon h3 {
+	padding: 0 30px;
+	margin: 15px 0;
+}
+#digi-identification {
+	position: relative;
+	z-index: 99;
+	filter: drop-shadow(0 0 10px #333);
+}
+.digi-verification.inner {
+	text-align: center;
+	background-image: url(../img/squares-texture.jpg);
+	z-index: 10;
+	margin: auto;
+	width: 100%;
+	position: absolute;
+	top: -50px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.digi-verification.inner h2 {
+	top: 20px;
+	position: relative;
+}
+body h2 {
+	margin: 0;
+	font-size: 45px;
+	text-transform: uppercase;
+}
+body h3 {
+	margin: 0;
+}
+body h4 {
+	margin: 15px 0 0;
+}
+body ul {
+	padding: 0 0 0 17px;
+	margin: 0;
+}
+section#products, section#partnerships {
+	padding: 50px 0;
+}
+.centered-text {
+	text-align: center;
+}
+.product-container {
+	padding: 5% 0;
+}
+.product-container.first {
+	background-image: url(../img/mobile-ticketing-bg.jpg);
+	background-size: 70%;
+	background-position: right center;
+	background-repeat: no-repeat;
+	max-width: none;
+	width: 100%;
+	height: 130%;
+}
+.product-container.second {
+	background-image: url(../img/id-verification-bg.jpg);
+	background-size: 70%;
+	background-position: left center;
+	background-repeat: no-repeat;
+	max-width: none;
+	width: 100%;
+	height: 130%;
+}
+body .dzsparallaxer:not(.mode-oneelement) {
+	background: none;
+}
+.product-container ~ .inner {
+	padding: 5% 0;
+}
+.parallaxer-container {
+	margin: 2.5% auto 5%;
+}
+.product-info-box {
+	padding: 15% 0;
+	max-width: 500px;
+	background-color: #fff;
+	padding: 50px;
+	border: 2px solid #c1a525;
+	position: relative;
+}
+.second .product-info-box {
+	float: left;
+}
+.second.product-info-box {
+	float: right;
+}
+.first .product-icon {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: -32px;
+	background-color: #fff;
+	padding: 10px 0;
+}
+.second .product-icon {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: -25px;
+	background-color: #fff;
+	padding: 10px 0;
+}
+.more-products {
+	position: relative;
+	padding: 25px 0;
+}
+.offerings-container {
+	border: 2px solid #c1a525;
+	padding: 50px 0 25px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	position: relative;
+}
+.offering:first-child {
+	border-right: 2px solid #c1a525;
+}
+.more-products h2 {
+	position: absolute;
+	top: -5px;
+	padding: 0 25px;
+	background-color: #fff;
+	z-index: 10;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.offering {
+	display: flex;
+	flex-basis: 50%;
+	position: relative;
+	z-index: 12;
+	flex-direction: column;
+	text-align: center;
+	padding: 5px 20px;
+}
+section#news {
+	background-image: url(../img/squares-texture.jpg);
+	padding: 50px 0;
+}
+.news-articles-container {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	margin: 50px 0 0;
+}
+.news-article {
+	background-color: #fff;
+	box-shadow: 0 0 15px #999;
+	margin-bottom: 2.5%;
+}
+.news-article img {
+	margin: auto;
+	display: block;
+	padding:  25px;
+}
+.news-article.full {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	flex-basis: 100%;
+}
+.news-article.full img {
+	background-color: #fff;
+}
+.news-article img {
+	max-width: 100%;
+}
+.news-article.full img, .news-article.full .article-content {
+	flex-basis: 50%;
+}
+.news-article.half {
+	flex-basis: 48.75%;
+	display: flex;
+}
+img.square-logo {
+	max-width: 200px;
+}
+.news-article-inner {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.news-article-inner img, .news-article-inner .article-content {
+	flex-basis: 100%;
+	flex-direction: column;
+}
+.article-content {
+	padding: 25px;
+	background-color: #f2f5f7;
+}
+.article-content h3 {
+	font-size: 22px;
+	line-height: 1.25em;
+}
+.news-articles-container a, .cta-button {
+	display: inline-block;
+	padding: 10px 15px;
+	background-color: #c1a525;
+	color: #fff;
+	text-decoration: none;
+	margin: 15px auto 0;
+	text-transform: uppercase;
+}
+.news-articles-container .news-article:nth-child(2) {
+	margin-right: 2.5%;
+}
+.logo-container {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 0;
+}
+.logo-container li {
+	list-style: none;
+	flex-basis: 33.333%;
+	text-align: center;
+	padding: 30px;
+}
+body .hamburger {
+	padding: 17px;
+}
+.light-text {
+	color: #fff;
+}
+footer {
+	background-image: url(../img/footer-bg.jpg);
+	background-size: cover;
+	padding: 50px 0;
+}
+.half-col {
+	float: left;
+	flex-direction: column;
+	flex-basis: 48%;
+}
+footer .inner {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+footer .half-col:first-child {
+	margin-right: 4%;
+}
+.list-builder .input-container {
+	margin-top: 15px;
+	display: block;
+	width: 100%;
+}
+.list-builder input {
+	padding: 0 15px;
+	border: none;
+	font-family: Proxima Nova;
+	font-size: 13px;
+	width: 50%;
+	line-height: 42px;
+}
+.list-builder input, .list-builder .cta-button {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0;
+}
+@media (max-width: 980px) {
+	.navigation {
+		display: none;
+	}
+	.mobile-navigation, body .hamburger {
+		display: block;
+	}
+	.icons-container .inner {
+		flex-wrap: wrap;
+	}
+}
+
+@media (max-width: 768px) {
+	.icon {
+		padding: 0 20px;
+		flex-basis: 50%;
+	}
+	.logo, .shrink .logo {
+		width: 200px;
+	}
+	body h2 {
+		font-size: 25px;
+		line-height: 1em;
+	}
+	.product-info-box {
+		max-width: 300px;
+	}
+	.product-container .inner {
+		padding: 0;
+	}
+	#products .product-container {
+		padding: 25px 0;
+	}
+	.digi-verification.inner {
+		top: auto;
+		position: relative;
+	}
+	.digi-verification.inner h2 {
+		top: auto;
+		padding: 25px 5% 0;
+	}
+	.icons-container {
+		padding: 25px 0;
+	}
+	body .icon h3 {
+		padding: 0;
+	}
+}
+
+@media (max-width: 450px) {
+	.product-info-box .product-icon {
+		left: 50%;
+		right: auto;
+		top: auto;
+		bottom: -42px;
+		transform: translateX(-50%);
+		padding: 0 10px;
+	}
+	.logo-container li {
+		flex-basis: 50%;
+	}
+	.tagline h1 {
+		font-size: 25px;
+	}
+	footer .half-col {
+		flex-basis: 100%;
+	}
+	footer .half-col:first-child {
+		margin-bottom: 25px;
+	}
+	.news-articles-container .news-article, .news-article.full img, .news-article.full .article-content, .news-articles-container .news-article:nth-child(2) {
+		flex-basis: 100%;
+		margin-right: 0;
+	}
+	.news-articles-container .news-article {
+		margin-bottom: 5%;
+	}
+	.product-info-box {
+		padding: 30px;
+	}
+	#products .product-container {
+		background-size: 100%;
+		background-position: top center;
+	}
+	.product-container {
+		padding: 100px 0 25px;
+	}
+	#products .inner {
+		padding-bottom: 25px;
+	}
+	.more-products h2 {
+		top: 30px;
+	}
+	.more-products {
+		padding-top: 50px;
+	}
+	.offering:first-child {
+	    border-right: none;
+		border-bottom: 2px solid #c1a525;
+	}
+	.offering {
+		padding-top: 25px;
+		padding-bottom: 25px;
+	}
+}
+
+@media (max-width: 812px) and (orientation: landscape) {
+	.news-article.full .article-content {
+		flex-basis: 100%;
+		margin-right: 0;
+	}
+}
+
+@media (max-width: 1024px) {
+	.news-article.full .article-content {
+		flex-basis: 100%;
+	}
+}
+
+.news-article.full .article-content
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
