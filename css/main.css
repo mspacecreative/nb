@@ -753,7 +753,11 @@ body ul.social-media {
 	}
 }
 
-.news-article.full .article-content
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	img[src*=".svg"] {
+		width: 100%; 
+	}
+}
 
 
 
