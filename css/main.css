@@ -477,7 +477,6 @@ section#news {
 	justify-content: space-between;
 	align-items: center;
 	flex-basis: 100%;
-	flex: 1;
 }
 .news-article.full img {
 	background-color: #fff;
