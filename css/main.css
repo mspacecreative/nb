@@ -281,6 +281,7 @@ body.reveal .hamburger {
 	-webkit-box-pack: center;
 	-ms-flex-pack: center;
 	justify-content: center;
+	flex: 1;
 }
 .icon {
 	flex-basis: 20%;
