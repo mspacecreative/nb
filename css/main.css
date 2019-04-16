@@ -485,8 +485,8 @@ section#news {
 .news-article img {
 	max-width: 100%;
 }
-.news-article.full img, .news-article.full .article-content {
-	flex-basis: 50%;
+.news-article.full .article-content {
+	flex-basis: 100%;
 }
 .news-article.half {
 	flex-basis: 48.75%;
@@ -502,7 +502,7 @@ img.square-logo {
 	flex-wrap: wrap;
 	flex: 1;
 }
-.news-article-inner .article-content {
+.news-article-inner img, .news-article-inner .article-content {
 	flex-basis: 100%;
 	flex-direction: column;
 }
