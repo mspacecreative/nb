@@ -485,13 +485,12 @@ section#news {
 .news-article img {
 	max-width: 100%;
 }
-.news-article.full img, .news-article.full .article-content {
+.news-article.full .article-content {
 	flex-basis: 50%;
 }
 .news-article.half {
 	flex-basis: 48.75%;
 	display: flex;
-	flex: 1;
 }
 img.square-logo {
 	max-width: 200px;
@@ -500,6 +499,7 @@ img.square-logo {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
+	flex: 1;
 }
 .news-article-inner img, .news-article-inner .article-content {
 	flex-basis: 100%;
