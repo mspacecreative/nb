@@ -458,6 +458,7 @@ section#news {
 	flex-wrap: wrap;
 	flex-direction: row;
 	margin: 50px 0 0;
+	flex: 1;
 }
 .news-article {
 	background-color: #fff;
@@ -476,6 +477,7 @@ section#news {
 	justify-content: space-between;
 	align-items: center;
 	flex-basis: 100%;
+	flex: 1;
 }
 .news-article.full img {
 	background-color: #fff;
@@ -489,6 +491,7 @@ section#news {
 .news-article.half {
 	flex-basis: 48.75%;
 	display: flex;
+	flex: 1;
 }
 img.square-logo {
 	max-width: 200px;
