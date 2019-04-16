@@ -28,7 +28,7 @@ jQuery(document).ready(function($) {
 	dzsprx_init('.parallaxer-container, { direction: "reverse", mode_scroll:"frombottom" }');
 });
 
-$(window).scroll(function() {
+jQuery(window).scroll(function($) {
 	headerAdjust();
 	
 	if ($('header').hasClass('shrink') ) {
