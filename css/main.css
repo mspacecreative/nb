@@ -367,7 +367,6 @@ body .dzsparallaxer:not(.mode-oneelement) {
 	padding: 50px 0 25px;
 	display: flex;
 	flex-direction: row;
-	flex-wrap: wrap;
 	justify-content: center;
 	position: relative;
 }
@@ -382,6 +381,9 @@ body .dzsparallaxer:not(.mode-oneelement) {
 	z-index: 10;
 	left: 50%;
 	transform: translateX(-50%);
+}
+.offerings-container {
+	flex-wrap: wrap;
 }
 .offering {
 	display: flex;
