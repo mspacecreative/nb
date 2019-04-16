@@ -37,6 +37,8 @@ html {
 
 body {
 	font-family: proxima-nova, sans-serif;
+	overflow-x: hidden;
+	-ms-overflow-x: hidden;
 }
 
 /*
@@ -148,8 +150,6 @@ img {
 .hero {
 	/*background-image: url(../img/hero-bg-img.jpg);*/
 	background-size: cover;
-	overflow-x: hidden;
-	-ms-overflow-x: hidden;
 }
 .hero video {
 	object-fit: cover;
