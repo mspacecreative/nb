@@ -22,7 +22,7 @@ function headerAdjust() {
 }
 
 $('.mobile-navigation a[href*="#"]').click(function() {
-	$(this).parent().parent().parent().prev().toggleClass('is-active');
+	$(this).parent().parent().parent().prev().prev().toggleClass('is-active');
 	$('body').toggleClass('reveal');
 });
 
