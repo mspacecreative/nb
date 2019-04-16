@@ -497,7 +497,6 @@ footer {
 footer .inner {
 	display: flex;
 	flex-direction: row;
-	flex-wrap: wrap;
 }
 footer .half-col:first-child {
 	margin-right: 4%;
@@ -643,7 +642,7 @@ body ul.social-media {
 	    border-right: none;
 		border-bottom: 2px solid #c1a525;
 	}
-	.offerings-container {
+	.offerings-container, footer .inner {
 		flex-wrap: wrap;
 	}
 	.offering {
