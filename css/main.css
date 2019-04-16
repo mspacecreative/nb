@@ -148,7 +148,8 @@ img {
 .hero {
 	/*background-image: url(../img/hero-bg-img.jpg);*/
 	background-size: cover;
-	position: relative;
+	overflow-x: hidden;
+	-ms-overflow-x: hidden;
 }
 .hero video {
 	object-fit: cover;
