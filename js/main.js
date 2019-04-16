@@ -21,14 +21,14 @@ function headerAdjust() {
 	}
 }
 
-jQuery(document).ready(function($) {
+$(document).ready(function() {
 	//navHeight();
 	hamburgerMenu();
 	//digiSectionHeight();
 	dzsprx_init('.parallaxer-container, { direction: "reverse", mode_scroll:"frombottom" }');
 });
 
-jQuery(window).scroll(function($) {
+$(window).scroll(function() {
 	headerAdjust();
 	
 	if ($('header').hasClass('shrink') ) {
