@@ -148,11 +148,9 @@ img {
 	margin: auto;
 }
 .hero {
-	/*background-image: url(../img/hero-bg-img.jpg);*/
+	background-image: url(../img/hero-bg-img.jpg);
 	background-size: cover;
 	overflow: hidden;
-	padding-bottom: 56.25%;
-	height: 0;
 }
 .hero video {
 	object-fit: cover;
@@ -775,7 +773,12 @@ body ul.social-media {
 	}
 }
 
-
+@media (max-device-width: 1366px) {
+	.hero {
+		padding-bottom: 56.25%;
+		height: 0;
+	}
+}
 
 
 
