@@ -773,7 +773,7 @@ body ul.social-media {
 	}
 }
 
-@media (max-device-width: 1366px) {
+@media (max-device-width: 1024px) {
 	.hero {
 		padding-bottom: 56.25%;
 		height: 0;
