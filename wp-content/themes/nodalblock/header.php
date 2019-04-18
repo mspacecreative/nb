@@ -30,31 +30,29 @@
 			<div class="body-overlay"></div>
 			
 			<div class="mobile-navigation">
-				<ul>
-					<li><a href="#digi-identification">What We Do</a></li>
-					<li><a href="#products">Products</a></li>
-					<li><a href="#news">News</a></li>
-					<li><a href="index.html">About</a></li>
-					<li><a href="#">Contact</a></li>
-				</ul>
+				<?php 
+					wp_nav_menu( array( 
+						'theme_location' => 'primary-menu',
+						'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s ' . $menu . '</ul>', 
+					) ); 
+				?>
 			</div>
 			
 			<div class="inner clearfix">
 				<!-- LOGO -->
 				<div class="logo">
-					<img src="img/nodalblock-logo.svg" alt="NodalBlock" />
+					<img src="<?php echo get_template_directory_uri(); ?>/img/nodalblock-logo.svg" alt="NodalBlock" />
 				</div>
 				<!-- / LOGO -->
 				
 				<!-- NAVIGATION -->
 				<nav class="navigation">
-					<ul>
-						<li><a href="#digi-identification">What We Do</a></li>
-						<li><a href="#products">Products</a></li>
-						<li><a href="#news">News</a></li>
-						<li><a href="#">About</a></li>
-						<li><a href="#">Contact</a></li>
-					</ul>
+					<?php 
+						wp_nav_menu( array( 
+							'theme_location' => 'primary-menu',
+							'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s ' . $menu . '</ul>', 
+						) ); 
+					?>
 				</nav>
 				<!-- / NAVIGATION -->
 			</div>
