@@ -41,7 +41,9 @@
 			<div class="inner clearfix">
 				<!-- LOGO -->
 				<div class="logo">
-					<img src="<?php echo get_template_directory_uri(); ?>/img/nodalblock-logo.svg" alt="NodalBlock" />
+					<a href="<?php echo home_url(); ?>">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/nodalblock-logo.svg" alt="NodalBlock" />
+					</a>
 				</div>
 				<!-- / LOGO -->
 				
