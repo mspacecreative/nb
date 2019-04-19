@@ -8,8 +8,10 @@ function hamburgerMenu() {
 		$('.hamburger').toggleClass('is-active');
 	});
 	$('.mobile-navigation li a[href*="#"]').click(function() {
-		$(this).parent().parent().parent().parent().siblings('.hamburger').toggleClass('is-active');
-		$('body').toggleClass('reveal');
+		if ( $('body').hasClass('home') ) {
+			$(this).parent().parent().parent().parent().siblings('.hamburger').toggleClass('is-active');
+			$('body').toggleClass('reveal');
+		}
 	});
 }
 
