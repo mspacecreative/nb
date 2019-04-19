@@ -739,6 +739,12 @@ body ul.social-media {
 	.news-article.half:first-child .article-content, .news-article.half:first-child .pub-logo {
 		flex-basis: 100%;
 	}
+	.news-article.half {
+		flex-basis: 100%;
+	}
+	.news-articles-container .news-article:nth-child(2) {
+	    margin-right: 0;
+	}
 	.logo-container li {
 		flex-basis: 50%;
 	}
