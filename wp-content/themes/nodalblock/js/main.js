@@ -4,7 +4,11 @@
 
 function hamburgerMenu() {
 	$('.hamburger').click(function() {
-		$(this).toggleClass('is-active');
+		$('body').toggleClass('reveal');
+		$('.hamburger').toggleClass('is-active');
+	});
+	$('.mobile-navigation li a[href*="#"]').click(function() {
+		$(this).parent().parent().parent().parent().siblings('.hamburger').toggleClass('is-active');
 		$('body').toggleClass('reveal');
 	});
 }
@@ -20,11 +24,6 @@ function headerAdjust() {
 	    $('header').removeClass('shrink');
 	}
 }
-
-$('.mobile-navigation a[href*="#"]').click(function() {
-	$(this).parent().parent().parent().prev().prev().toggleClass('is-active');
-	$('body').toggleClass('reveal');
-});
 
 $(document).ready(function() {
 	//navHeight();

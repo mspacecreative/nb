@@ -152,10 +152,10 @@ img {
 	overflow: hidden;
 }
 .hero-page {
-	background-image: url(../img/hero-bg-img.jpg);
 	padding: 150px 0;
 	background-size: cover;
 	position: relative;
+	background-position: center;
 }
 .hero-page:after {
 	position: absolute;
@@ -323,6 +323,7 @@ body .icon h3 {
 	position: relative;
 	z-index: 99;
 	filter: drop-shadow(0 0 10px #333);
+	overflow: hidden;
 }
 .digi-verification.inner {
 	text-align: center;
@@ -451,12 +452,14 @@ body .product-info-box ul {
 }
 .more-products h2 {
 	position: absolute;
-	top: -5px;
+	top: 12px;
 	padding: 0 25px;
 	background-color: #fff;
 	z-index: 10;
 	left: 50%;
 	transform: translateX(-50%);
+	font-size: 30px;
+	line-height: 1em;
 }
 .offering {
 	display: flex;
@@ -488,13 +491,13 @@ section#news {
 	display: block;
 	padding:  15px;
 }
-.news-article.full, .news-article:first-child {
+.news-article.half:first-child {
 	display: flex;
 	flex-direction: row;
-	flex-wrap: wrap!important;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
-	flex-basis: 100%!important;
+	flex-basis: 100%;
 }
 .news-article:first-child .news-article-inner {
 	flex-wrap: nowrap;
@@ -505,8 +508,11 @@ section#news {
 .news-article img {
 	max-width: 100%;
 }
-.news-article.full .article-content {
+.news-article.half:first-child .article-content, .news-article.half:first-child .pub-logo {
 	flex-basis: 50%;
+}
+.pub-logo {
+	align-self: center;
 }
 .news-article.half {
 	flex-basis: 48.75%;
@@ -520,6 +526,7 @@ img.square-logo {
 	flex-direction: row;
 	flex-wrap: wrap;
 	flex: 1;
+	justify-content: center;
 }
 .news-article-inner img, .news-article-inner .article-content {
 	flex-basis: 100%;
@@ -547,6 +554,7 @@ img.square-logo {
 }
 .logo-container {
 	display: flex;
+	flex: 1;
 	flex-wrap: wrap;
 	flex-direction: row;
 	justify-content: center;
@@ -684,15 +692,18 @@ body ul.social-media {
 		padding: 2%;
 		flex-basis: 48%;
 	}
+	.article-content h3 {
+		font-size: 18px;
+	}
 	.logo, .shrink .logo {
 		width: 200px;
+	}
+	.news-article:first-child .news-article-inner {
+		flex-wrap: wrap;
 	}
 	body h2 {
 		font-size: 25px;
 		line-height: 1em;
-	}
-	.product-info-box {
-		max-width: 300px;
 	}
 	.product-container .inner {
 		padding: 0;
@@ -717,13 +728,16 @@ body ul.social-media {
 }
 
 @media (max-width: 450px) {
-	.product-info-box .product-icon {
+	#products .parallaxer-container:nth-child(odd) .product-icon, #products .parallaxer-container:nth-child(even) .product-icon {
 		left: 50%;
 		right: auto;
 		top: auto;
 		bottom: -42px;
 		transform: translateX(-50%);
 		padding: 0 10px;
+	}
+	.news-article.half:first-child .article-content, .news-article.half:first-child .pub-logo {
+		flex-basis: 100%;
 	}
 	.logo-container li {
 		flex-basis: 50%;
@@ -737,7 +751,7 @@ body ul.social-media {
 	footer .half-col:first-child {
 		margin-bottom: 25px;
 	}
-	.news-articles-container .news-article, .news-article.full img, .news-article.full .article-content, .news-articles-container .news-article:nth-child(2) {
+	#products .news-articles-container .news-article, #products .news-article.full img, #products .news-article.full .article-content, #products .news-articles-container .news-article:nth-child(2) {
 		flex-basis: 100%;
 		margin-right: 0;
 	}
@@ -747,7 +761,7 @@ body ul.social-media {
 	.product-info-box {
 		padding: 30px;
 	}
-	#products .product-container {
+	#products .parallaxer-container:nth-child(odd) .product-container, #products .parallaxer-container:nth-child(even) .product-container {
 		width: 100%;
 		background-size: 100%;
 		background-position: top;
@@ -805,6 +819,9 @@ body ul.social-media {
 	.news-article.full .article-content {
 		flex-basis: 100%;
 		margin-right: 0;
+	}
+	.product-info-box {
+		max-width: 300px;
 	}
 }
 

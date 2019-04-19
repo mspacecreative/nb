@@ -6,7 +6,6 @@ jQuery(document).ready(function($) {
 
 	function hamburgerMenu() {
 		$('.hamburger').click(function() {
-			$(this).toggleClass('is-active');
 			$('body').toggleClass('reveal');
 		});
 	}
@@ -23,8 +22,7 @@ jQuery(document).ready(function($) {
 		}
 	}
 	
-	$('.mobile-navigation a[href*="#"]').click(function() {
-		$(this).parent().parent().parent().prev().prev().toggleClass('is-active');
+	$('.mobile-navigation li').click(function() {
 		$('body').toggleClass('reveal');
 	});
 	

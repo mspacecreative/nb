@@ -7,12 +7,14 @@
 			<?php while ( have_rows('articles') ) : the_row(); ?>
 			<div class="news-article half">
 				<div class="news-article-inner">
-					<?php 
-					$image = get_sub_field('image');
-					$size = 'large';
-					if( $image ) {
-						echo wp_get_attachment_image( $image, $size );
-					} ?>
+					<div class="pub-logo">
+						<?php 
+						$image = get_sub_field('image');
+						$size = 'large';
+						if( $image ) {
+							echo wp_get_attachment_image( $image, $size );
+						} ?>
+					</div>
 					<div class="article-content">
 						<h3><?php the_sub_field('article_title'); ?></h3>
 						<a href="<?php the_sub_field('article_link'); ?>" target="_blank">Read Article</a>
