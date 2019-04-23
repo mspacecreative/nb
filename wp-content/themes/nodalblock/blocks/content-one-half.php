@@ -5,7 +5,8 @@
 	<?php if ( get_field('content_subtitle') ): ?>
 	<h3 class="centered-text"><?php the_field('content_subtitle') ?></h3>
 	<?php endif; ?>
-	<?php 
+	<?php
+	$fullwidth = get_field('full_width'); 
 	if ( $fullwidth ): ?>
 	<div class="full-width-inner">
 		<div class="half-col-content first">
