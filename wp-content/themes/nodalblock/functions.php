@@ -146,8 +146,39 @@ function gutenberg_editor_styles() {
 	add_editor_style( 'css/gutenberg.css' );
 }
 
+function my_mce_before_init_insert_formats( $init_array ) {
+ 
+    $style_formats = array(  
+
+        array(  
+            'title' => 'White CTA Button',  
+            'block' => 'a',  
+            'classes' => 'cta_button_light',
+            'wrapper' => true,
+             
+        ),  
+        array(  
+            'title' => 'Green CTA Button',  
+            'block' => 'a',  
+            'classes' => 'cta_button',
+            'wrapper' => true,
+        ),
+        array(  
+            'title' => 'H3 with top line rule',  
+            'block' => 'h3',  
+            'classes' => 'h3_linerule',
+            'wrapper' => true,
+        ),
+    );  
+    $init_array['style_formats'] = json_encode( $style_formats );  
+     
+    return $init_array;  
+   
+}
+
 // ACTIONS, OPTIONS AND FILTERS
 add_action('wp_enqueue_scripts', 'nodal_enqueue_styles');
 add_action( 'after_setup_theme', 'nav_registration' );
 add_action('acf/init', 'my_acf_init');
 add_action('init','gutenberg_editor_styles');
+add_filter( 'tiny_mce_before_init', 'my_mce_before_init_insert_formats' );
