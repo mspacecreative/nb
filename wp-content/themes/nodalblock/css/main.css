@@ -243,9 +243,12 @@ img {
 }
 .has-bg-img {
 	padding: 50px 0;
-	margin: 50px 0 0;
+	margin: 50px 0;
 	background-size: cover;
 	background-repeat: no-repeat;
+}
+.has-bg-img:last-of-type {
+	margin-bottom: 0;
 }
 .reveal .body-overlay {
 	opacity: .75;
