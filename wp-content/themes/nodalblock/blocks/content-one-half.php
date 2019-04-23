@@ -1,4 +1,8 @@
+<?php if ( get_field('background_img') ): ?>
+<div style="background-image: url(<?php the_field('background_img'); ?>);">
+<?php else : ?>
 <div class="clearfix">
+<?php endif; ?>
 	<?php if ( get_field('content_title') ): ?>
 	<h2 class="centered-text"><?php the_field('content_title') ?></h2>
 	<?php endif; ?>
