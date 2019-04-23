@@ -137,6 +137,7 @@ img {
 .full-width .full-width-inner {
 	max-width: 1080px;
 	margin: auto;
+	max-width: 80%;
 }
 .shrink .logo {
 	width: 175px;
