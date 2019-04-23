@@ -5,9 +5,6 @@
 	<?php if ( get_field('content_subtitle') ): ?>
 	<h3 class="centered-text"><?php the_field('content_subtitle') ?></h3>
 	<?php endif; ?>
-	<?php
-	$fullwidth = get_field('full_width'); 
-	if ( $fullwidth ): ?>
 	<div class="full-width-inner">
 		<div class="half-col-content first">
 			<?php the_field('left_col'); ?>
@@ -16,12 +13,4 @@
 			<?php the_field('right_col'); ?>
 		</div>
 	</div>
-	<?php else : ?>
-	<div class="half-col-content first">
-		<?php the_field('left_col'); ?>
-	</div>
-	<div class="half-col-content">
-		<?php the_field('right_col'); ?>
-	</div>
-	<?php endif; ?>
 </div>
