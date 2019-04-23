@@ -139,6 +139,9 @@ img {
 	margin: auto;
 	max-width: 80%;
 }
+.full-width.inner-page.no-bottom-padding {
+	padding-bottom: 0;
+}
 .shrink .logo {
 	width: 175px;
 	transition: all 0.5s ease-in-out;
