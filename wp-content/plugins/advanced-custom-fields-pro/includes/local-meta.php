@@ -76,7 +76,16 @@ class ACF_Local_Meta {
 	 * @return	bool
 	 */
 	function is_request( $meta = array() ) {
-		return acf_is_field_key( key( $meta ) );
+		
+		// Return true if any of the meta keys are field keys.
+		foreach( (array) $meta as $k => $v ) {
+			if( acf_is_field_key($k) ) {
+				return true;
+			}
+		}
+		
+		// Return default.
+		return false;
 	}
 	
 	/**
@@ -132,7 +141,7 @@ class ACF_Local_Meta {
 		$this->meta[ $post_id ][ $name ] = $value;
 		
 		// Return non null value to escape update process.
-		return true;
+		return false;
 	}
 	
 	/**
@@ -192,11 +201,8 @@ class ACF_Local_Meta {
 	 */
 	function pre_load_metadata( $null, $post_id, $name, $hidden ) {
 		$name = ($hidden ? '_' : '') . $name;
-		if( isset($this->meta[ $post_id ]) ) {
-			if( isset($this->meta[ $post_id ][ $name ]) ) {
-				return $this->meta[ $post_id ][ $name ];
-			}
-			return '__return_null';
+		if( isset($this->meta[ $post_id ][ $name ]) ) {
+			return $this->meta[ $post_id ][ $name ];
 		}
 		return $null;
 	}
