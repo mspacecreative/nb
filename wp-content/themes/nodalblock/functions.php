@@ -3,8 +3,8 @@
 /* LOAD STYLES AND SCRIPTS */
 function nodal_enqueue_styles() {
 
-	//wp_register_style( 'normalize', get_template_directory_uri() . '/css/normalize.min.css', '', null );
-	//wp_enqueue_style('normalize');
+	wp_register_style( 'normalize', get_template_directory_uri() . '/css/normalize.min.css', '', null );
+	wp_enqueue_style('normalize');
 	
 	wp_register_style( 'main-styles', get_template_directory_uri() . '/css/main.css', '', null );
 	wp_enqueue_style('main-styles');
