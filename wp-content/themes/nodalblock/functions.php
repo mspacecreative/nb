@@ -147,15 +147,8 @@ function gutenberg_editor_styles() {
 	add_editor_style( 'css/gutenberg.css' );
 }
 
-/* ACF GOOGLE API KEY */
-function my_acf_google_map_api( $api ){
-	$api['key'] = 'AIzaSyCt13ANZNFW4uh8cpodiY0Pwaf2FozWWq0';
-	return $api;
-}
-
 // ACTIONS, OPTIONS AND FILTERS
 add_action('wp_enqueue_scripts', 'nodal_enqueue_styles');
 add_action( 'after_setup_theme', 'nav_registration' );
 add_action('acf/init', 'my_acf_init');
 add_action('init','gutenberg_editor_styles');
-add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');
