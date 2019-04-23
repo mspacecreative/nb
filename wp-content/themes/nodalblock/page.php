@@ -14,8 +14,8 @@ get_header();
 		
 		<?php 
 		if ( have_posts() ) : while ( have_posts() ) : the_post();
-		
-			if ( get_field('full_width') ): ?>
+			$fullwidth = get_field('full_width');
+			if ( $fullwidth ): ?>
 			<div class="full-width inner-page">
 			<?php else : ?>
 			<div class="inner inner-page">
