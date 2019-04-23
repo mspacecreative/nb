@@ -150,6 +150,8 @@ img {
 .hero {
 	background-size: cover;
 	overflow: hidden;
+	position: static;
+	z-index: 1;
 }
 .hero-page {
 	padding: 150px 0;
@@ -381,6 +383,11 @@ section#products, section#partnerships {
 }
 .product-container {
 	padding: 5% 0;
+}
+#products {
+	position: relative;
+	background-color: #fff;
+	z-index: 2;
 }
 #products .parallaxer-container:nth-child(even) .product-container {
 	background-size: cover;
