@@ -13,9 +13,13 @@ get_header();
 		<!-- / HERO -->
 		
 		<?php 
-		if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-				
+		if ( have_posts() ) : while ( have_posts() ) : the_post();
+		
+			if ( get_field('full_width') ): ?>
+			<div class="full-width inner-page">
+			<?php else : ?>
 			<div class="inner inner-page">
+			<?php endif; ?>
 				
 				<!-- PAGE TITLE -->
 				<div class="page-title">

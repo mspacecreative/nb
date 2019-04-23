@@ -54,6 +54,7 @@ function my_acf_init() {
 			'icon'				=> 'images-alt',
 			'keywords'			=> array( 'title', 'icons' ),
 			'mode'				=> 'edit',
+			'supports'			=> array( 'mode' => false ),
 		));
 		
 		// register products block
@@ -66,6 +67,7 @@ function my_acf_init() {
 			'icon'				=> 'megaphone',
 			'keywords'			=> array( 'products', 'nodalblock' ),
 			'mode'				=> 'edit',
+			'supports'			=> array( 'mode' => false ),
 		));
 		
 		// register articles block
@@ -78,6 +80,7 @@ function my_acf_init() {
 			'icon'				=> 'format-aside',
 			'keywords'			=> array( 'news', 'articles' ),
 			'mode'				=> 'edit',
+			'supports'			=> array( 'mode' => false ),
 		));
 		
 		// register half column block
@@ -90,6 +93,7 @@ function my_acf_init() {
 			'icon'				=> 'screenoptions',
 			'keywords'			=> array( 'half', 'column' ),
 			'mode'				=> 'edit',
+			'supports'			=> array( 'mode' => false ),
 		));
 		
 		// register partnerships block
@@ -102,6 +106,7 @@ function my_acf_init() {
 			'icon'				=> 'screenoptions',
 			'keywords'			=> array( 'partnership', 'logos' ),
 			'mode'				=> 'edit',
+			'supports'			=> array( 'mode' => false ),
 		));
 		
 		// register locations block
@@ -114,6 +119,7 @@ function my_acf_init() {
 			'icon'				=> 'location-alt',
 			'keywords'			=> array( 'locations', 'map' ),
 			'mode'				=> 'edit',
+			'supports'			=> array( 'mode' => false ),
 		));
 		
 		// register contact form block
@@ -126,6 +132,7 @@ function my_acf_init() {
 			'icon'				=> 'format-aside',
 			'keywords'			=> array( 'locations', 'map' ),
 			'mode'				=> 'edit',
+			'supports'			=> array( 'mode' => false ),
 		));
 	}
 }
