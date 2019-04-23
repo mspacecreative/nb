@@ -15,7 +15,10 @@ get_header();
 		<?php 
 		if ( have_posts() ) : while ( have_posts() ) : the_post();
 			$fullwidth = get_field('full_width');
-			if ( $fullwidth ): ?>
+			$nobottompadding = get_field('no_bottom_padding');
+			if ( $fullwidth == 'true' && $nobottompadding == 'true' ): ?>
+			<div class="full-width inner-page no-bottom-padding">
+			<?php elseif ( $fullwidth ): ?>
 			<div class="full-width inner-page">
 			<?php else : ?>
 			<div class="inner inner-page">
