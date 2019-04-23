@@ -26,21 +26,36 @@
 	</div>
 	<?php endwhile; ?>
 	
-	<div class="more-products">
-		<div class="inner">
-			<h2 class="centered-text">Other Offerings</h2>
-			<div class="offerings-container clearfix">
-				<div class="offering">
-					<h3>Nodal Pic</h3>
-					<p>Authenticate pictures for process improvement</p>
+	<?php if( have_rows('more_products_section') ):  ?>
+		<div class="more-products">
+			<div class="inner">
+				<?php while( have_rows('more_products_section') ): the_row(); ?>
+				<h2 class="centered-text"><?php the_sub_field('more_products_title'); ?></h2>
+				<div class="offerings-container clearfix">
+					
+					<?php if( have_rows('product_one_section') ):  ?>
+					<?php while( have_rows('product_one_section') ): the_row(); ?>
+					<div class="offering">
+						<h3><?php the_sub_field('product_one_title'); ?></h3>
+						<?php the_sub_field('product_one_blurb'); ?>
+					</div>
+					<?php endwhile;
+					endif; ?>
+					
+					<?php if( have_rows('product_two_section') ):  ?>
+					<?php while( have_rows('product_two_section') ): the_row(); ?>
+					<div class="offering">
+						<h3><?php the_sub_field('product_two_title'); ?></h3>
+						<?php the_sub_field('product_two_blurb'); ?>
+					</div>
+					<?php endwhile;
+					endif; ?>
+					
 				</div>
-				<div class="offering">
-					<h3>Custom Development</h3>
-					<p>Easily integrate our API into your custom project</p>
-				</div>
+				<?php endwhile; ?>
 			</div>
 		</div>
-	</div>
+	<?php endif; ?>
 	
 </section>
 <?php endif; ?>

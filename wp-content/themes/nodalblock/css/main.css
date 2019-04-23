@@ -633,6 +633,10 @@ body ul.social-media {
 .social-media li a {
 	padding: 0 10px;
 	display: block;
+	color: #666;
+}
+.social-media .fa {
+	font-size: 20px;
 }
 .footer-bottom {
 	background-color: #f3f3f4;
@@ -678,6 +682,15 @@ body ul.social-media {
 	content: '';
 	left: 0;
 }
+.inquiry-form textarea, .inquiry-form input[type=text],.inquiry-form input[type=email] {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 2%;
+	border: 1px solid #c9c9c9;
+}
+.inquiry-form label:nth-child(3) input {
+	margin-right: 0;
+}
 .page-title h1 {
 	display: inline-block;
 	background-color: #fff;
@@ -687,9 +700,19 @@ body ul.social-media {
 .inner-page h3 {
 	margin: 15px 0 30px;
 }
+.fifty-fifty .half-col {
+	width: 100%;
+}
+.inner-page .fifty-fifty h3 {
+	margin-bottom: 0;
+	text-transform: uppercase;
+}
 @media (max-width: 980px) {
 	.navigation {
 		display: none;
+	}
+	.fifty-fifty .half-col:first-child {
+		margin-bottom: 25px;
 	}
 	.half-col-content:first-child {
 		margin-bottom: 15px;
@@ -706,6 +729,18 @@ body ul.social-media {
 	.half-col-content.first {
 		margin-right: 4%;
 		
+	}
+	.inquiry-form input[type=text],.inquiry-form input[type=email] {
+		float: left;
+		width: 32%;
+		padding: 10px 15px;
+		margin: 0 2% 2% 0;
+	}
+	.fifty-fifty .half-col:first-child {
+		margin-right: 4%;
+	}
+	.fifty-fifty .half-col {
+		width: 48%;
 	}
 	.half-col-content {
 		width: 48%;

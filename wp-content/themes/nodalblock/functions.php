@@ -88,6 +88,39 @@ function my_acf_init() {
 			'icon'				=> 'screenoptions',
 			'keywords'			=> array( 'half', 'column' ),
 		));
+		
+		// register partnerships block
+		acf_register_block(array(
+			'name'				=> 'partners',
+			'title'				=> __('Partnerships Block'),
+			'description'		=> __('Partner logos and links'),
+			'render_callback'	=> 'my_acf_block_render_callback',
+			'category'			=> 'formatting',
+			'icon'				=> 'screenoptions',
+			'keywords'			=> array( 'partnership', 'logos' ),
+		));
+		
+		// register locations block
+		acf_register_block(array(
+			'name'				=> 'locations',
+			'title'				=> __('Locations Block'),
+			'description'		=> __('Map locations and contact information'),
+			'render_callback'	=> 'my_acf_block_render_callback',
+			'category'			=> 'formatting',
+			'icon'				=> 'location-alt',
+			'keywords'			=> array( 'locations', 'map' ),
+		));
+		
+		// register contact form block
+		acf_register_block(array(
+			'name'				=> 'contact-form',
+			'title'				=> __('Contact Form Block'),
+			'description'		=> __('General Inquiries form'),
+			'render_callback'	=> 'my_acf_block_render_callback',
+			'category'			=> 'formatting',
+			'icon'				=> 'format-aside',
+			'keywords'			=> array( 'locations', 'map' ),
+		));
 	}
 }
 
@@ -114,8 +147,15 @@ function gutenberg_editor_styles() {
 	add_editor_style( 'css/gutenberg.css' );
 }
 
+/* ACF GOOGLE API KEY */
+function my_acf_google_map_api( $api ){
+	$api['key'] = 'AIzaSyCt13ANZNFW4uh8cpodiY0Pwaf2FozWWq0';
+	return $api;
+}
+
 // ACTIONS, OPTIONS AND FILTERS
 add_action('wp_enqueue_scripts', 'nodal_enqueue_styles');
 add_action( 'after_setup_theme', 'nav_registration' );
 add_action('acf/init', 'my_acf_init');
 add_action('init','gutenberg_editor_styles');
+add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');

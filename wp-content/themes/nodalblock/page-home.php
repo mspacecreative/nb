@@ -25,32 +25,4 @@ get_header();
 			<p><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></p>
 		<?php endif; ?>
 		
-		<!-- OUR PARTNERSHIPS -->
-		<section id="partnerships">
-			<div class="inner">
-				<h2 class="centered-text">Our Partnerships</h2>
-				<ul class="logo-container">
-					<li class="partner-logo">
-						<img src="img/kpmg.svg" />
-					</li>
-					<li class="partner-logo">
-						<img src="img/medlab.svg" />
-					</li>
-					<li class="partner-logo">
-						<img src="img/neoris.svg" />
-					</li>
-					<li class="partner-logo">
-						<img src="img/finnovating.svg" />
-					</li>
-					<li class="partner-logo">
-						<img src="img/bankia.svg" />
-					</li>
-					<li class="partner-logo">
-						<img src="img/rubricall.svg" />
-					</li>
-				</div>
-			</div>
-		</section>
-		<!-- / OUR PARTNERSHIPS -->
-		
 		<?php get_footer(); ?>
