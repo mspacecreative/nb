@@ -19,6 +19,8 @@ get_header();
 			if ( $fullwidth == 'true' && $nobottompadding == 'true' ): ?>
 			<div class="full-width inner-page no-bottom-padding">
 			<?php elseif ( $fullwidth ): ?>
+			<div class="no-bottom-padding inner-page">
+			<?php elseif ( $nobottompadding ): ?>
 			<div class="full-width inner-page">
 			<?php else : ?>
 			<div class="inner inner-page">
