@@ -18,8 +18,8 @@ function nodal_enqueue_styles() {
 	wp_register_style( 'parallaxer-styles', get_template_directory_uri() . '/css/parallaxer.css', '', null );
 	wp_enqueue_style('parallaxer-styles');
 	
-	wp_register_script('js-vendor', get_template_directory_uri() . '/js/vendor/modernizr-2.6.2.min.js', array('jquery'), null);
-	wp_enqueue_script('js-vendor');
+	//wp_register_script('js-vendor', get_template_directory_uri() . '/js/vendor/modernizr-2.6.2.min.js', array('jquery'), null);
+	//wp_enqueue_script('js-vendor');
 	
 	wp_register_script('parallaxer-scripts', get_template_directory_uri() . '/js/parallaxer.js', array('jquery'), null, true);
 	wp_enqueue_script('parallaxer-scripts');
