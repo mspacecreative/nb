@@ -637,12 +637,11 @@ footer .inner {
 	width: 100%;
 }
 .list-builder input {
-	padding: 0 15px;
+	padding: 13px 15px;
 	border: none;
 	font-family: proxima-nova, sans-serif;
 	font-size: 13px;
 	width: 50%;
-	line-height: 42px;
 }
 .list-builder input, .list-builder .cta-button {
 	display: inline-block;
