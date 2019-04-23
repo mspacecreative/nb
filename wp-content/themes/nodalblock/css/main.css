@@ -150,8 +150,9 @@ img {
 .hero {
 	background-size: cover;
 	overflow: hidden;
-	position: static;
+	position: relative;
 	z-index: 1;
+	padding-bottom: 56.25%;
 }
 .hero-page {
 	padding: 150px 0;
@@ -752,6 +753,12 @@ body ul.social-media {
 	.half-col-content {
 		width: 48%;
 		float: left;
+	}
+}
+
+@media (min-width: 1081px) {
+	.hero {
+		margin-bottom: -63px;
 	}
 }
 
