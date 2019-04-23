@@ -3,9 +3,6 @@
 	$(function () {
 		
 		'use strict';
-		/*function navHeight() {
-			$('.navigation').height($('header').height());
-		}*/
 		
 		function hamburgerMenu() {
 			$('.hamburger').click(function() {
@@ -20,10 +17,6 @@
 			});
 		}
 		
-		function digiSectionHeight() {
-			$('#digi-identification').css('top', - $('.digi-verification').outerHeight());
-		}
-		
 		function headerAdjust() {
 			if ($(this).scrollTop() > 200) {
 			    $('header').addClass('shrink');
@@ -33,9 +26,7 @@
 		}
 		
 		$(document).ready(function() {
-			//navHeight();
 			hamburgerMenu();
-			//digiSectionHeight();
 		});
 		
 		$(window).scroll(function() {
