@@ -1,5 +1,5 @@
 <?php if ( get_field('background_img') ): ?>
-<div style="background-image: url(<?php the_field('background_img'); ?>);">
+<div style="background-image: url(<?php the_field('background_img'); ?>);" class="has-bg-img">
 <?php else : ?>
 <div class="clearfix">
 <?php endif; ?>

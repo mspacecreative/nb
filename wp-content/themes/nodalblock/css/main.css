@@ -237,6 +237,10 @@ img {
 	opacity: 0;
 	transition: all 0.25s ease-in-out;
 }
+.has-bg-img {
+	padding: 50px 0;
+	margin: 50px 0 0;
+}
 .reveal .body-overlay {
 	opacity: .75;
 	visibility: visible;
