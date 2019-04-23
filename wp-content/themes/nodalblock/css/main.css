@@ -240,6 +240,8 @@ img {
 .has-bg-img {
 	padding: 50px 0;
 	margin: 50px 0 0;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 .reveal .body-overlay {
 	opacity: .75;
