@@ -32,7 +32,6 @@ jQuery(document).ready(function($) {
 		//navHeight();
 		hamburgerMenu();
 		//digiSectionHeight();
-		dzsprx_init('.parallaxer-container, { direction: "reverse", mode_scroll:"frombottom" }');
 	});
 	
 	$(window).scroll(function() {
