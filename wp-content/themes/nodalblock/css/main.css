@@ -606,7 +606,7 @@ img.square-logo {
 	list-style: none;
 	flex-basis: 33.333%;
 	text-align: center;
-	padding: 30px;
+	padding: 30px 0;
 }
 body .hamburger {
 	padding: 17px;
