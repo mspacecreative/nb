@@ -5,7 +5,7 @@
 	<?php if ( get_field('content_subtitle') ): ?>
 	<h3 class="centered-text"><?php the_field('content_subtitle') ?></h3>
 	<?php endif; ?>
-	<div class="full-width-inner">
+	<div class="full-width-inner clearfix">
 		<div class="half-col-content first">
 			<?php the_field('left_col'); ?>
 		</div>
