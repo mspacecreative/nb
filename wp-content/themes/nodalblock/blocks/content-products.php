@@ -1,11 +1,11 @@
 <!-- PRODUCTS SECTION -->
-<?php if( have_rows('products') ): ?>
 <section id="products">
 	
 	<div class="inner">
 		<h2 class="centered-text">PRODUCTS</h2>
 	</div>
 	
+	<?php if( have_rows('products') ): ?>
 	<?php while ( have_rows('products') ) : the_row(); ?>
 	<div class="parallaxer-container dzsparallaxer auto-init height-is-based-on-content">
 		<div class="product-container first divimage dzsparallaxer--target" style="background-image: url(<?php the_sub_field('product_bg_img'); ?>);"></div>
@@ -24,7 +24,8 @@
 			</div>
 		</div>
 	</div>
-	<?php endwhile; ?>
+	<?php endwhile;
+	endif; ?>
 	
 	<?php if( have_rows('more_products_section') ):  ?>
 		<div class="more-products">
@@ -58,5 +59,4 @@
 	<?php endif; ?>
 	
 </section>
-<?php endif; ?>
 <!-- / PRODUCTS SECTION -->
