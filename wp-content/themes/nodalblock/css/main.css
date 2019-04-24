@@ -758,17 +758,11 @@ body ul.social-media {
 	text-transform: uppercase;
 }
 @media (max-width: 980px) {
-	.navigation {
-		display: none;
-	}
 	.fifty-fifty .half-col:first-child {
 		margin-bottom: 25px;
 	}
 	.half-col-content:first-child {
 		margin-bottom: 15px;
-	}
-	.mobile-navigation, body .hamburger {
-		display: block;
 	}
 	.icons-container .inner {
 		flex-wrap: wrap;
@@ -994,6 +988,15 @@ body ul.social-media {
 	}
 	.tagline h1 {
 		font-size: 100px;
+	}
+}
+
+@media (max-width: 1080px) {
+	.navigation {
+		display: none;
+	}
+	.mobile-navigation, body .hamburger {
+		display: block;
 	}
 }
 
