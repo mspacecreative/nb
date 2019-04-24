@@ -340,6 +340,10 @@ body .icon h3 {
 	padding: 0 30px;
 	margin: 15px 0;
 }
+h4 {
+	color: #C1A51E;
+	margin: 0 0 15px;
+}
 #digi-identification {
 	position: relative;
 	z-index: 99;
