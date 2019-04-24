@@ -2,7 +2,7 @@
 <section id="products">
 	
 	<div class="inner">
-		<h2 class="centered-text">PRODUCTS</h2>
+		<h2 class="centered-text"><?php the_field('section_title'); ?></h2>
 	</div>
 	
 	<?php if( have_rows('products') ): ?>
