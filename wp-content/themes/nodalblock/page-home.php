@@ -10,7 +10,7 @@ get_header();
 			</video>
 			<div class="inner clearfix">
 				<div class="tagline">
-					<h1>Identify &amp; Authenticate</h1>
+					<h1><?php get_bloginfo('description'); ?></h1>
 				</div>
 			</div>
 		</div>
