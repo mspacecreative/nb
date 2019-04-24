@@ -410,6 +410,9 @@ section#products, section#partnerships {
 .right-text {
 	text-align: right;
 }
+.left-text {
+	text-align: left;
+}
 .product-container {
 	padding: 5% 0;
 }
