@@ -186,6 +186,11 @@ if (function_exists('add_theme_support')) {
 	add_image_size('small', 120, '', true); // Small Thumbnail
 }
 
+/* TITLE TAG SUPPORT */
+function titleTag() {
+ add_theme_support( 'title-tag' );
+}
+
 /* STYLE GUTENBERG */
 function gutenberg_editor_styles() {
 	add_theme_support('editor-styles');
@@ -228,3 +233,4 @@ add_action( 'after_setup_theme', 'nav_registration' );
 add_action('acf/init', 'my_acf_init');
 add_action('init','gutenberg_editor_styles');
 add_filter( 'tiny_mce_before_init', 'my_mce_before_init_insert_formats' );
+add_action( 'after_setup_theme', 'titleTag' );
