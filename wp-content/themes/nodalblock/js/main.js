@@ -21,8 +21,17 @@ jQuery(document).ready(function($) {
 		}
 	}
 	
+	function heroInnerHeight() {
+		$('.hero .inner').height($('.hero').outerHeight());
+	}
+	
 	$(document).ready(function() {
 		hamburgerMenu();
+		heroInnerHeight();
+	});
+	
+	$(window).resize(function() {
+		heroInnerHeight();
 	});
 	
 	$(window).scroll(function() {

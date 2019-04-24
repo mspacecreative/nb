@@ -163,6 +163,9 @@ img {
 	padding-bottom: 56.25%;
 	height: 0;
 }
+.hero .inner {
+	position: relative;
+}
 .hero-page {
 	padding: 150px 0;
 	background-size: cover;
@@ -194,8 +197,10 @@ img {
 	max-width: 500px;
 	float: right;
 	padding: 25% 0;
-	position: relative;
+	position: absolute;
 	z-index: 10;
+	top: 50%;
+	transform: translateY(-50%);
 }
 .tagline h1 {
 	text-transform: uppercase;
