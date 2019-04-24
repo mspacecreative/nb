@@ -600,7 +600,7 @@ img.square-logo {
 	background-color: #c1a525;
 	color: #fff;
 	text-decoration: none;
-	margin: 15px auto 0;
+	margin: 0 auto;
 	text-transform: uppercase;
 }
 .news-articles-container .news-article:nth-child(2) {
