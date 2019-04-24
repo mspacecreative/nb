@@ -7,8 +7,13 @@
 		<?php if ( get_field('content_title') ): ?>
 		<h2 class="centered-text"><?php the_field('content_title') ?></h2>
 		<?php endif; ?>
-		<?php if ( get_field('content_subtitle') ): ?>
-		<h3 class="centered-text"><?php the_field('content_subtitle') ?></h3>
+		<?php
+		$alignment = get_field('text_alignment');
+		if ( $alignment ): ?>
+		<h3 class="<?php echo $alignment; ?>"><?php the_field('content_subtitle') ?></h3>
+		<h3><?php the_field('content_subtitle') ?></h3>
+		<?php else : ?>
+		<h3><?php the_field('content_subtitle') ?></h3>
 		<?php endif; ?>
 		<div class="half-col-content first">
 			<?php the_field('left_col'); ?>
