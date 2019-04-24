@@ -140,6 +140,19 @@ function my_acf_init() {
 			'mode'				=> 'edit',
 			'supports'			=> array( 'mode' => false ),
 		));
+		
+		// register footer block
+		acf_register_block(array(
+			'name'				=> 'footer-en',
+			'title'				=> __('Footer Block'),
+			'description'		=> __('Request a demo and list builder'),
+			'render_callback'	=> 'my_acf_block_render_callback',
+			'category'			=> 'formatting',
+			'icon'				=> 'format-aside',
+			'keywords'			=> array( 'demo', 'email' ),
+			'mode'				=> 'edit',
+			'supports'			=> array( 'mode' => false ),
+		));
 	}
 }
 
