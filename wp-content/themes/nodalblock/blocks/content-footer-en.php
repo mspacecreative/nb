@@ -20,8 +20,8 @@
 			<?php
 			if( have_rows('right_column') ):
 			while( have_rows('right_column') ): the_row();
-			if ( get_field('footer_right_blurb') ): ?>
-			<h4><?php the_field('footer_right_blurb'); ?></h4>
+			if ( get_sub_field('footer_right_blurb') ): ?>
+			<h4><?php the_sub_field('footer_right_blurb'); ?></h4>
 			<?php endif;
 			echo do_shortcode('[contact-form-7 id="110" title="List Builder (EN)"]');
 			endwhile;
