@@ -972,7 +972,14 @@ body ul.social-media {
 	}
 }
 
-
+@media (min-width: 1700px) {
+	.tagline {
+		max-width: none;
+	}
+	.tagline h1 {
+		font-size: 90px;
+	}
+}
 
 /* ==========================================================================
    Helper classes
