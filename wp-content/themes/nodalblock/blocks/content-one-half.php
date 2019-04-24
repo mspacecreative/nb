@@ -9,7 +9,7 @@
 		<?php endif; ?>
 		<?php
 		if ( get_field('content_subtitle') ): ?>
-			<h3 class="<?php the_field('text_alignment'); ?>"><?php the_field('content_subtitle') ?></h3>
+			<h3 class="<?php the_field('text_alignment'); ?>"><?php the_field('content_subtitle'); ?></h3>
 		<?php endif; ?>
 		<div class="half-col-content first">
 			<?php the_field('left_col'); ?>
