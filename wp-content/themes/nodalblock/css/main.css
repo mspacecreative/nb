@@ -630,9 +630,13 @@ img.square-logo {
 }
 .logo-container li {
 	list-style: none;
-	flex-basis: 33.333%;
+	flex-basis: 13.6%;
 	text-align: center;
 	padding: 30px 0;
+	margin-right: 8%;
+}
+.logo-container li:last-child {
+	margin-right: 0;
 }
 body .hamburger {
 	padding: 17px;
@@ -847,6 +851,16 @@ body ul.social-media {
 	}
 }
 
+@media (max-width: 568px) {
+	.logo-container li {
+		flex-basis: 40%;
+		margin-right: 20%;
+	}
+	.logo-container li:nth-child(2n) {
+		margin-right: 0;
+	}
+}
+
 @media (max-width: 450px) {
 	#products .parallaxer-container:nth-child(odd) .product-icon, #products .parallaxer-container:nth-child(even) .product-icon {
 		left: 50%;
@@ -873,9 +887,6 @@ body ul.social-media {
 	}
 	.news-articles-container .news-article:nth-child(2) {
 	    margin-right: 0;
-	}
-	.logo-container li {
-		flex-basis: 50%;
 	}
 	footer .half-col {
 		flex-basis: 100%;
