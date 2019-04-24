@@ -864,6 +864,9 @@ body ul.social-media {
 	}
 	.tagline {
 		max-width: 80%;
+		top: auto;
+		transform: none;
+		bottom: 25px;
 	}
 	.tagline h1 {
 		font-size: 30px;
@@ -957,12 +960,6 @@ body ul.social-media {
 	}
 	.product-info-box {
 		max-width: 300px;
-	}
-	.tagline {
-		max-width: 80%;
-	}
-	.tagline h1 {
-		font-size: 30px;
 	}
 }
 
