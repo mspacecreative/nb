@@ -594,7 +594,7 @@ img.square-logo {
 	font-size: 22px;
 	line-height: 1.25em;
 }
-.news-articles-container a, .cta-button {
+.news-articles-container a, .cta-button, .wpcf7-submit {
 	display: inline-block;
 	padding: 10px 15px;
 	background-color: #c1a525;
@@ -602,6 +602,7 @@ img.square-logo {
 	text-decoration: none;
 	margin: 0 auto;
 	text-transform: uppercase;
+	border: none;
 }
 .news-articles-container .news-article:nth-child(2) {
 	margin-right: 2.5%;
