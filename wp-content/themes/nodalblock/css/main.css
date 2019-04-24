@@ -639,7 +639,13 @@ img.square-logo {
 	margin-right: 0;
 }
 body .hamburger {
-	padding: 17px;
+	padding: 0;
+	right: 10%;
+	height: 100%;
+}
+body .hamburger-box {
+	height: auto;
+	position: static;
 }
 .light-text {
 	color: #fff;
