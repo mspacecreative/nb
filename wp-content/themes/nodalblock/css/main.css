@@ -295,8 +295,9 @@ body .hamburger {
 	z-index: 10;
 }
 body.reveal .hamburger {
-	transform: translateX(-250px);
+	transform: translateX(-265px);
 	transition: all 0.25s ease-in-out;
+	right: 0;
 }
 .hamburger .hamburger-inner, .hamburger .hamburger-inner:after, .hamburger .hamburger-inner:before, body .hamburger.is-active .hamburger-inner, body .hamburger.is-active .hamburger-inner:after, body .hamburger.is-active .hamburger-inner:before {
 	background-color: #fff;
