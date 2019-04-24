@@ -743,7 +743,7 @@ body ul.social-media {
 	width: 100%;
 }
 .inner-page .fifty-fifty h3 {
-	margin-bottom: 0;
+	margin-bottom: 10px;
 	text-transform: uppercase;
 }
 @media (max-width: 980px) {
