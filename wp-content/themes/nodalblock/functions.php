@@ -144,7 +144,20 @@ function my_acf_init() {
 		// register footer block
 		acf_register_block(array(
 			'name'				=> 'footer-en',
-			'title'				=> __('Footer Block'),
+			'title'				=> __('Footer Block (EN)'),
+			'description'		=> __('Request a demo and list builder'),
+			'render_callback'	=> 'my_acf_block_render_callback',
+			'category'			=> 'formatting',
+			'icon'				=> 'format-aside',
+			'keywords'			=> array( 'demo', 'email' ),
+			'mode'				=> 'edit',
+			'supports'			=> array( 'mode' => false ),
+		));
+		
+		// register footer block
+		acf_register_block(array(
+			'name'				=> 'footer-es',
+			'title'				=> __('Footer Block (ES)'),
 			'description'		=> __('Request a demo and list builder'),
 			'render_callback'	=> 'my_acf_block_render_callback',
 			'category'			=> 'formatting',
