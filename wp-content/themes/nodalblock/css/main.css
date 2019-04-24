@@ -985,9 +985,9 @@ body ul.social-media {
 	}
 }
 
-@media (min-width: 1700px) {
+@media (min-width: 1600px) {
 	.tagline {
-		max-width: none;
+		max-width: 60%;
 	}
 	.tagline h1 {
 		font-size: 100px;
