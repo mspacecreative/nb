@@ -340,6 +340,10 @@ body .icon h3 {
 	padding: 0 30px;
 	margin: 15px 0;
 }
+.top-line-rule {
+	padding-top: 25px;
+	margin-top: 25px;
+}
 body .inner-page .red-text h4 {
 	color: #C1A51E;
 	margin: 20px 0 5px;
