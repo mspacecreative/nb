@@ -40,7 +40,7 @@ function nav_registration() {
 
 if( function_exists('acf_add_options_page') ) {
 
-	acf_add_options_page('Get Started');
+	acf_add_options_page('Footer');
 
 }
 
