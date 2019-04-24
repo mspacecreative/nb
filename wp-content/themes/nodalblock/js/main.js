@@ -21,6 +21,11 @@ jQuery(document).ready(function($) {
 		}
 	}
 	
+	function replaceFlags() {
+		$('.lang-item-en img').replaceWith('EN');
+		$('.lang-item-es img').replaceWith('ES');
+	}
+	
 	function heroInnerHeight() {
 		$('.hero .inner').height($('.hero').outerHeight());
 	}
@@ -28,9 +33,8 @@ jQuery(document).ready(function($) {
 	$(document).ready(function() {
 		hamburgerMenu();
 		heroInnerHeight();
+		replaceFlags();
 	});
-	
-	$('.lang-item-en img').replaceWith('EN');
 	
 	$(window).resize(function() {
 		heroInnerHeight();
