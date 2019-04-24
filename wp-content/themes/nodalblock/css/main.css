@@ -780,6 +780,12 @@ body ul.social-media {
 		margin-right: 4%;
 		
 	}
+	.tagline {
+		max-width: 80%;
+	}
+	.tagline h1 {
+		font-size: 40px;
+	}
 	.list-builder-para {
 		float: left;
 	}
@@ -811,12 +817,6 @@ body ul.social-media {
 	.icon {
 		padding: 2%;
 		flex-basis: 48%;
-	}
-	.tagline {
-		max-width: 80%;
-	}
-	.tagline h1 {
-		font-size: 40px;
 	}
 	.article-content h3 {
 		font-size: 18px;
