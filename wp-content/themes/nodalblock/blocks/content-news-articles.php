@@ -22,7 +22,7 @@
 				</div>
 			</div>
 			<?php endwhile; ?>
-			<a href="#">More Articles</a>
+			<!--<a href="#">More Articles</a>-->
 		</div>
 	</div>
 </section>
