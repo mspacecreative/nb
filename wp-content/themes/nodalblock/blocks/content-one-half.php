@@ -8,8 +8,8 @@
 		<h2 class="centered-text"><?php the_field('content_title') ?></h2>
 		<?php endif; ?>
 		<?php
+		$alignment = get_field('text_alignment');
 		if ( get_field('content_subtitle') ):
-		 	$alignment = get_field('text_alignment'); 
 		 	if ( $alignment ): ?>
 			<h3 class="<?php echo $alignment; ?>"><?php the_field('content_subtitle') ?></h3>
 			<?php else : ?>
