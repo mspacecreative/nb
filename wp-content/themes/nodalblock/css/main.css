@@ -773,18 +773,18 @@ body ul.social-media {
 	.icons-container .inner {
 		flex-wrap: wrap;
 	}
+	.tagline {
+		max-width: 80%;
+	}
+	.tagline h1 {
+		font-size: 40px;
+	}
 }
 
 @media (min-width: 981px) {
 	.half-col-content.first {
 		margin-right: 4%;
 		
-	}
-	.tagline {
-		max-width: 80%;
-	}
-	.tagline h1 {
-		font-size: 40px;
 	}
 	.list-builder-para {
 		float: left;
