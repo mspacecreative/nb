@@ -208,6 +208,9 @@ img {
 	font-size: 80px;
 	line-height: 1em;
 }
+.lang-item-en a, .lang-item-es a {
+	font-weight: bold;
+}
 .hero:after {
 	position: absolute;
 	content: '';
