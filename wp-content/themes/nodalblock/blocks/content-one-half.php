@@ -5,7 +5,7 @@
 <?php endif; ?>
 	<div class="full-width-inner clearfix">
 		<?php if ( get_field('content_title') ): ?>
-		<h2 class="centered-text"><?php the_field('content_title'); ?></h2>
+		<h2 class="<?php the_field('text_alignment'); ?>"><?php the_field('content_title'); ?></h2>
 		<?php endif; ?>
 		<?php
 		if ( get_field('content_subtitle') ): ?>
