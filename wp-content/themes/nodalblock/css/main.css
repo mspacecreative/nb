@@ -813,10 +813,10 @@ body ul.social-media {
 		flex-basis: 48%;
 	}
 	.tagline {
-		max-width: 75%;
+		max-width: 70%;
 	}
 	.tagline h1 {
-		font-size: 30px;
+		font-size: 40px;
 	}
 	.article-content h3 {
 		font-size: 18px;
@@ -861,6 +861,12 @@ body ul.social-media {
 		bottom: -42px;
 		transform: translateX(-50%);
 		padding: 0 10px;
+	}
+	.tagline {
+		max-width: 80%;
+	}
+	.tagline h1 {
+		font-size: 30px;
 	}
 	.news-article.half:first-child .article-content, .news-article.half:first-child .pub-logo {
 		flex-basis: 100%;
