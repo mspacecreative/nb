@@ -6,6 +6,13 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>
+		    <?php if(is_front_page() || is_home()){
+		        echo get_bloginfo('name'); echo esc_html_e(' | '); echo get_bloginfo('description');
+		    } else{
+		        echo wp_title(''); echo esc_html_e(' | '); echo get_bloginfo('name');
+		    }?>
+		</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 		
