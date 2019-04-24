@@ -774,10 +774,10 @@ body ul.social-media {
 		flex-wrap: wrap;
 	}
 	.tagline {
-		max-width: 80%;
+		max-width: 75%;
 	}
 	.tagline h1 {
-		font-size: 40px;
+		font-size: 50px;
 	}
 }
 
