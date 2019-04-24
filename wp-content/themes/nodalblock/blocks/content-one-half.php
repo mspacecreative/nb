@@ -13,7 +13,7 @@
 		 	if ( $alignment ): ?>
 			<h3 class="<?php echo $alignment; ?>"><?php the_field('content_subtitle') ?></h3>
 			<?php else : ?>
-			<?php the_field('content_subtitle'); ?>
+			<h3><?php the_field('content_subtitle'); ?></h3>
 			<?php endif; ?>
 		<?php endif; ?>
 		<div class="half-col-content first">
