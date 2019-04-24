@@ -30,6 +30,8 @@ jQuery(document).ready(function($) {
 		heroInnerHeight();
 	});
 	
+	$('.lang-item-en img').replaceWith('EN');
+	
 	$(window).resize(function() {
 		heroInnerHeight();
 	});
