@@ -389,14 +389,14 @@ body h3 {
 	line-height: 1.25em;
 }
 body h4 {
-	margin: 0 0 15px;
+	margin: 15px 0 0;
 }
 body ul {
 	padding: 0 0 0 17px;
 	margin: 0;
 }
 body p, pre {
-	margin: 15px 0 0;
+	margin: 0 0 15px;
 }
 body p:last-child, pre:last-child {
 	margin-bottom: 0;
