@@ -586,7 +586,7 @@ img.square-logo {
 	flex-basis: 100%;
 	flex-direction: column;
 }
-.list-builder-para input {
+.list-builder .list-builder-para input {
 	width: 100%;
 }
 .article-content {
