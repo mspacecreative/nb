@@ -12,9 +12,7 @@
 			if ( get_sub_field('footer_left_blurb') ): ?>
 			<h4><?php the_sub_field('footer_left_blurb'); ?></h4>
 			<?php endif; ?>
-			<?php if ( get_sub_field('footer_left_link') ): ?>
 			<a href="<?php the_sub_field('footer_left_link'); ?>" class="cta-button"><?php the_sub_field('footer_left_label'); ?></a>
-			<?php endif; ?>
 			<?php endwhile;
 			endif; ?>
 		</div>
