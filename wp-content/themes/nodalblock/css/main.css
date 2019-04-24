@@ -407,6 +407,9 @@ section#products, section#partnerships {
 .centered-text {
 	text-align: center;
 }
+.right-text {
+	text-align: right;
+}
 .product-container {
 	padding: 5% 0;
 }
