@@ -1,7 +1,7 @@
 <?php if ( get_field('background_img') ): ?>
-<div style="background-image: url(<?php the_field('background_img'); ?>);" class="has-bg-img">
+<div style="background-image: url(<?php the_field('background_img'); ?>);" class="has-bg-img red-text">
 <?php else : ?>
-<div class="clearfix">
+<div class="red-text">
 <?php endif; ?>
 	<div class="full-width-inner clearfix">
 		<?php if ( get_field('content_title') ): ?>

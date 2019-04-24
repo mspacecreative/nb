@@ -137,7 +137,7 @@ img {
 .full-width .full-width-inner {
 	max-width: 1080px;
 	margin: auto;
-	max-width: 80%;
+	width: 80%;
 }
 .full-width.inner-page.no-bottom-padding {
 	padding-bottom: 0;
@@ -340,7 +340,7 @@ body .icon h3 {
 	padding: 0 30px;
 	margin: 15px 0;
 }
-body .inner-page h4 {
+body .inner-page .red-text h4 {
 	color: #C1A51E;
 	margin: 20px 0 5px;
 }
