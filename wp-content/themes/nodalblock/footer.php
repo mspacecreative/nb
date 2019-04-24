@@ -23,12 +23,12 @@
 						<p>&copy; 2019 NodalBlock. All Rights Reserved.</p>
 					</div>
 					<div class="half-col">
-						<?php if( have_rows('social_media') ): ?>
+						<?php if( have_rows('social_media', 'options') ): ?>
 						<ul class="social-media">
-							<?php while( have_rows('social_media') ): the_row(); ?>
-							<li><a href="<?php the_sub_field('facebook'); ?>"><i class="fa fa-facebook"></i></a></li>
-							<li><a href="<?php the_sub_field('twitter'); ?>"><i class="fa fa-twitter"></i></a></li>
-							<li><a href="<?php the_sub_field('linkedin'); ?>"><i class="fa fa-linkedin"></i></a></li>
+							<?php while( have_rows('social_media', 'options') ): the_row(); ?>
+							<li><a href="<?php the_sub_field('facebook', 'options'); ?>"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="<?php the_sub_field('twitter', 'options'); ?>"><i class="fa fa-twitter"></i></a></li>
+							<li><a href="<?php the_sub_field('linkedin', 'options'); ?>"><i class="fa fa-linkedin"></i></a></li>
 							<?php endwhile; ?>
 						</ul>
 						<?php endif; ?>
