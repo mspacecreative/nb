@@ -2,7 +2,7 @@
 <?php if( have_rows('articles') ): ?>
 <section id="news">
 	<div class="inner">
-		<h2 class="centered-text">News</h2>
+		<h2 class="centered-text"><?php the_field('section_title'); ?></h2>
 		<div class="news-articles-container">
 			<?php while ( have_rows('articles') ) : the_row(); ?>
 			<div class="news-article half">
