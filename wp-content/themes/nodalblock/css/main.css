@@ -424,7 +424,7 @@ body p:last-child, pre:last-child {
 	padding: 50px 0;
 	background-color: #fff;
 }
-#not-found {
+#not-found, .content-wrapper {
 	background-color: #fff;
 }
 .centered-text {

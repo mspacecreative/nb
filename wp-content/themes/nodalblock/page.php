@@ -12,31 +12,33 @@ get_header();
 		<?php endif; ?>
 		<!-- / HERO -->
 		
-		<?php 
-		if ( have_posts() ) : while ( have_posts() ) : the_post();
-			$fullwidth = get_field('full_width');
-			$nobottompadding = get_field('no_bottom_padding');
-			if ( $fullwidth == 'true' && $nobottompadding == 'true' ): ?>
-			<div class="full-width inner-page no-bottom-padding">
-			<?php elseif ( $fullwidth ): ?>
-			<div class="full-width inner-page">
-			<?php elseif ( $nobottompadding ): ?>
-			<div class="no-bottom-padding inner-page">
-			<?php else : ?>
-			<div class="inner inner-page">
-			<?php endif; ?>
-				
-				<!-- PAGE TITLE -->
-				<div class="page-title">
-					<h1><?php echo the_title(); ?></h1>
+		<div class="content-wrapper">
+			<?php 
+			if ( have_posts() ) : while ( have_posts() ) : the_post();
+				$fullwidth = get_field('full_width');
+				$nobottompadding = get_field('no_bottom_padding');
+				if ( $fullwidth == 'true' && $nobottompadding == 'true' ): ?>
+				<div class="full-width inner-page no-bottom-padding">
+				<?php elseif ( $fullwidth ): ?>
+				<div class="full-width inner-page">
+				<?php elseif ( $nobottompadding ): ?>
+				<div class="no-bottom-padding inner-page">
+				<?php else : ?>
+				<div class="inner inner-page">
+				<?php endif; ?>
+					
+					<!-- PAGE TITLE -->
+					<div class="page-title">
+						<h1><?php echo the_title(); ?></h1>
+					</div>
+					<!-- / PAGE TITLE -->
+					
+					<?php the_content(); ?>
 				</div>
-				<!-- / PAGE TITLE -->
-				
-				<?php the_content(); ?>
-			</div>
-		
-		<?php endwhile; else : ?>
-			<p><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></p>
-		<?php endif; ?>
+			
+			<?php endwhile; else : ?>
+				<p><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></p>
+			<?php endif; ?>
+		</div>
 		
 		<?php get_footer(); ?>
