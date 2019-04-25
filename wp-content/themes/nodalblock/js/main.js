@@ -22,8 +22,8 @@ jQuery(document).ready(function($) {
 	}
 	
 	function replaceFlags() {
-		$('.lang-item-en img').replaceWith('EN');
-		$('.lang-item-es img').replaceWith('ES');
+		$('.lang-item-en img').replaceWith('ENGLISH');
+		$('.lang-item-es img').replaceWith('ESPAÑOL');
 	}
 	
 	function heroInnerHeight() {
