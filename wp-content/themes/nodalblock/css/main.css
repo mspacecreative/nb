@@ -280,6 +280,13 @@ img {
 .navigation li:last-child a {
 	border: 1px solid #fff;
 	margin-left: 15px;
+	transition: all 0.5s ease-in-out;
+}
+
+.navigation.shrink li:last-child a {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	transition: all 0.5s ease-in-out;
 }
 
 .mobile-navigation {
