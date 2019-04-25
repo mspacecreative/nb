@@ -21,7 +21,10 @@ get_header();
 					</div>
 					<!-- / PAGE TITLE -->
 					
-					<p class="centered-text"><?php esc_html_e( 'Sorry, this page does not exist. Please use the navigation menu above to find what you&#8217;re looking for, or click ' ); ?><a href="<?php echo home_url(); ?>">here</a><?php esc_html_e(' to go to the home page'); ?></p>
+					<div style="max-width: 750px; margin: auto;">
+						<p class="centered-text"><?php esc_html_e( 'Sorry, this page does not exist. Please use the navigation menu above to find what you&#8217;re looking for, or click ' ); ?><a href="<?php echo home_url(); ?>">here</a><?php esc_html_e(' to go to the home page'); ?>
+						</p>
+					</div>
 				</div>
 			</section>
 		
