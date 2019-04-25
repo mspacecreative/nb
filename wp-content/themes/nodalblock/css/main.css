@@ -274,7 +274,8 @@ img {
 	text-decoration: none
 }
 .navigation li:last-child a {
-	padding-right: 0;
+	border: 1px solid #fff;
+	margin-left: 15px;
 }
 
 .mobile-navigation {
