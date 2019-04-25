@@ -33,6 +33,7 @@ body p:last-of-type {
 html {
     font-size: 1em;
     line-height: 1.4;
+	background-color: #f3f3f4;
 }
 
 body {
@@ -419,8 +420,12 @@ body p, pre {
 body p:last-child, pre:last-child {
 	margin-bottom: 0;
 }
-section#products, section#partnerships {
+#products, #partnerships {
 	padding: 50px 0;
+	background-color: #fff;
+}
+#not-found {
+	background-color: #fff;
 }
 .centered-text {
 	text-align: center;
@@ -480,6 +485,7 @@ body .product-info-box ul {
 .inner-page {
 	padding: 50px 0;
 	position: relative;
+	background-color: #fff;
 }
 #products .parallaxer-container:nth-child(even) .product-info-box {
 	float: left;
