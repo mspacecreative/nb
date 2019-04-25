@@ -7,7 +7,7 @@ get_header();
 		<div class="hero-page" style="background-image: url(<?php the_field('page_bg_img'); ?>);">
 		</div>
 		<?php else : ?>
-		<div class="hero-page" style="background-image: url(<?php echo get_template_directory_uri(); ?>/img/hero-bg-img.jpg);">
+		<div class="hero-page" style="background-image: url(<?php echo get_template_directory_uri(); ?>/video/nodalblock-poster.jpg);">
 		</div>
 		<?php endif; ?>
 		<!-- / HERO -->

@@ -5,8 +5,8 @@ get_header();
 
 		<!-- HERO -->
 		<div class="hero">
-			<video autoplay="true" preload="auto" loop playsinline muted poster="<?php echo get_template_directory_uri(); ?>/img/hero-bg-img.jpg">
-				<source src="<?php echo get_template_directory_uri(); ?>/video/1007431315-preview.mp4" type="video/mp4" />
+			<video autoplay="true" preload="auto" loop playsinline muted poster="<?php echo get_template_directory_uri(); ?>/video/nodalblock-poster.jpg">
+				<source src="<?php echo get_template_directory_uri(); ?>/video/nodalblock.mp4" type="video/mp4" />
 			</video>
 			<div class="inner clearfix">
 				<div class="tagline">
