@@ -914,6 +914,9 @@ body ul.social-media {
 		transform: translateX(-50%);
 		padding: 0 10px;
 	}
+	.product-info-box {
+		max-width: none;
+	}
 	.tagline {
 		max-width: 80%;
 		top: auto;
