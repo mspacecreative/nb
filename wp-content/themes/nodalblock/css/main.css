@@ -843,10 +843,22 @@ body ul.social-media {
 	}
 }
 
+@media (max-width: 1024px) {
+	.news-article.full .article-content {
+		flex-basis: 100%;
+	}
+	.product-info-box {
+		max-width: 425px;
+	}
+}
+
 @media (max-width: 768px) {
 	.icon {
 		padding: 2%;
 		flex-basis: 48%;
+	}
+	.product-info-box {
+	    max-width: 300px;
 	}
 	.article-content h3 {
 		font-size: 18px;
@@ -997,15 +1009,6 @@ body ul.social-media {
 	}
 	.product-info-box {
 		max-width: 300px;
-	}
-}
-
-@media (max-width: 1024px) {
-	.news-article.full .article-content {
-		flex-basis: 100%;
-	}
-	.product-info-box {
-		max-width: 425px;
 	}
 }
 
