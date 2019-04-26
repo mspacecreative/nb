@@ -1004,6 +1004,9 @@ body ul.social-media {
 	.news-article.full .article-content {
 		flex-basis: 100%;
 	}
+	.product-info-box {
+		max-width: 425px;
+	}
 }
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
